@@ -39,7 +39,7 @@ rm -rf /.config/nvim && cp ~/systeminstall/nvim ~/.config/ -r
 
 sudo echo " " && # prevent having to enter password again 
 
-yay -Syu --noconfirm etcher-bin ventoy-bin sxhkd protonvpn-gui rustdesk-bin syncthing-gtk visual-studio-code-bin burpsuite oh-my-zsh-plugin-autosuggestions oh-my-zsh-plugin-syntax-highlighting && sudo pacman -S --noconfirm ttf-hack brasero rofi feh polybar tree chromium cmake firefox-developer-edition wmname gnome-disk-utility gnu-netcat gparted kate keepassxc libreoffice-still btop prusa-slicer maim neofetch neovim nmap p7zip python-pip ripgrep sxiv syncthing terminator torbrowser-launcher ufw unzip vim virtualbox wget whois xclip zenity zsh && sudo chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh n0ne && sudo pacman -Rns --noconfirm firewalld
+yay -Syu --noconfirm etcher-bin ventoy-bin sxhkd protonvpn-gui rustdesk-bin syncthing-gtk visual-studio-code-bin burpsuite oh-my-zsh-plugin-autosuggestions oh-my-zsh-plugin-syntax-highlighting && sudo pacman -S --noconfirm ttf-hack polkit-kde-agent brasero rofi feh polybar tree chromium cmake firefox-developer-edition wmname gnome-disk-utility gnu-netcat gparted kate keepassxc libreoffice-still btop prusa-slicer maim neofetch neovim nmap p7zip python-pip ripgrep sxiv syncthing terminator torbrowser-launcher ufw unzip vim virtualbox wget whois xclip zenity zsh && sudo chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh n0ne && sudo pacman -Rns --noconfirm firewalld
 
 cp ~/systeminstall/wallpaper.jpg ~/Documents/ && feh --bg-scale ~/Documents/wallpaper.jpg
 
