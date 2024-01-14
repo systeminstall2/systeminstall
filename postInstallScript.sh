@@ -14,11 +14,13 @@ sudo chmod +x ~/.config/polybar/scripts/check-network
 sudo chmod +x ~/.config/polybar/launch.sh
 # Writing bspwmrc ##############################################
 
-sudo cat ~/systeminstall/bspwmrc > ~/.config/bspwm/bspwmrc
+sudo rm ~/.config/bspwm/bspwmrc
+cat ~/systeminstall/bspwmrc > ~/.config/bspwm/bspwmrc
 
 # Writin sxhkdrc ########################################
 
-sudo cat ~/systeminstall/sxhkdrc >  ~/.config/sxhkd/sxhkdrc
+sudo rm ~/.config/sxhkd/sxhkdrc
+cat ~/systeminstall/sxhkdrc >  ~/.config/sxhkd/sxhkdrc
 
 # Writing rofi ################################
 
@@ -26,7 +28,8 @@ rm -rf /.config/rofi && cp ~/systeminstall/rofi ~/.config/ -r
 
 # Writing terminator ###################################
 
-mkdir ~/.config/terminator && cat ~/systeminstall/terminator > ~/.config/terminator/config
+sudo rm ~/.config/terminator/config
+mkdir -p ~/.config/terminator && cat ~/systeminstall/terminator > ~/.config/terminator/config
 
 # Writing nvim #########################################
 
