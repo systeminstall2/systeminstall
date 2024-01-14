@@ -14,11 +14,11 @@ sudo chmod +x ~/.config/polybar/scripts/check-network
 sudo chmod +x ~/.config/polybar/launch.sh
 # Writing bspwmrc ##############################################
 
-cat ~/systeminstall/bspwmrc > ~/.config/bspwm/bspwmrc
+sudo cat ~/systeminstall/bspwmrc > ~/.config/bspwm/bspwmrc
 
 # Writin sxhkdrc ########################################
 
-cat ~/systeminstall/sxhkdrc >  ~/.config/sxhkd/sxhkdrc
+sudo cat ~/systeminstall/sxhkdrc >  ~/.config/sxhkd/sxhkdrc
 
 # Writing rofi ################################
 
