@@ -61,4 +61,4 @@ mkdir fonts && cd fonts && wget "https://github.com/ryanoasis/nerd-fonts/release
 
 #Fix weird themeing stuff if kde and bspwm are installed alongside
 
-cat xprofile > ~/.xprofile
+cat ~/systeminstall/.xprofile > ~/.xprofile
