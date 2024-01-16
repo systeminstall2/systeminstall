@@ -58,3 +58,7 @@ sudo systemctl enable bluetooth
 # Install Nerdfonts for emojis
 
 mkdir fonts && cd fonts && wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip" && unzip Hack.zip && sudo mkdir -p /usr/local/share/fonts && rm Hack.zip && sudo mv * /usr/local/share/fonts/ && cd ..
+
+#Fix weird themeing stuff if kde and bspwm are installed alongside
+
+cat xprofile > ~/.xprofile
