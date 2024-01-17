@@ -62,3 +62,5 @@ mkdir fonts && cd fonts && wget "https://github.com/ryanoasis/nerd-fonts/release
 #Fix weird themeing stuff if kde and bspwm are installed alongside
 
 cat ~/systeminstall/.xprofile > ~/.xprofile
+
+echo "\n\nInstallation finished\n\n\nDon't forget to install the correct driver for this device!"
