@@ -260,9 +260,6 @@ if [ -f /etc/zsh_command_not_found ]; then
     . /etc/zsh_command_not_found
 fi
 echo ""
-alias monerod='monerod --zmq-pub tcp://127.0.0.1:18083 --out-peers 64 --in-peers 32 --add-priority-node=node.supportxmr.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist'
-alias xmrig='sudo /home/n0ne/Documents/monero/xmrig -o 127.0.0.1:3333'
-alias p2pool='/home/n0ne/Documents/monero/p2pool --host 127.0.0.1 --wallet 4AWgUVGqmx9favtvXBWDRyUtEkxgAFQynJWEJg1YSo7HMBbdC3Q37CqScW55EaH87vJCVRv8zrgQpcHpvFSWzbpiAcQNGVt'
 
 export XDG_CURRENT_DESKTOP=KDE &
 export XDG_SESSION_DESKTOP=KDE &
