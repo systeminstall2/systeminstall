@@ -66,4 +66,7 @@ mkdir -p ~/.config/terminator && cat ~/systeminstall/terminator > ~/.config/term
 
 rm -rf ~/.config/nvim && cp ~/systeminstall/nvim ~/.config/ -r
 
+sudo chmod 755 ~/.config/bspwm/bspwmrc
+sudo chmod 644 ~/.config/sxhkd/sxhkdrc
+
 echo "\n\nInstallation finished\n\n\nDon't forget to install the correct driver for this device!"
