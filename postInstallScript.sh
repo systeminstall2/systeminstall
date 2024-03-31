@@ -2,6 +2,9 @@
 
 git clone https://github.com/systeminstall/systeminstall ~/systeminstall 
 
+mkdir ~/.config/bspwm
+mkdir ~/.config/sxhkd
+
 #Installing all packages ##########################################################
 
 sudo echo " " && # prevent having to enter password again 
