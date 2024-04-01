@@ -46,7 +46,7 @@ xsetroot -cursor_name left_ptr &
 # Low battery notifier
 ~/.config/bspwm/scripts/low_bat_notifier.sh &
 
-feh --bg-scale ~/Documents/wallpaper.jpg &
+feh --bg-scale ~/Documents/thisImage &
 
 wmname LG3D &
 export XDG_CURRENT_DESKTOP=KDE &
