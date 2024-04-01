@@ -260,7 +260,3 @@ if [ -f /etc/zsh_command_not_found ]; then
     . /etc/zsh_command_not_found
 fi
 echo ""
-
-export XDG_CURRENT_DESKTOP=KDE &
-export XDG_SESSION_DESKTOP=KDE &
-export SAL_USE_VCLPLUGIN=kde5 &
