@@ -69,4 +69,6 @@ rm -rf ~/.config/nvim && cp ~/systeminstall/nvim ~/.config/ -r
 sudo chmod 755 ~/.config/bspwm/bspwmrc
 sudo chmod 644 ~/.config/sxhkd/sxhkdrc
 
+sudo cp ~/systeminstall/timetracker.sh /usr/bin/tt
+
 echo "\n\nInstallation finished\n\n\nDon't forget to install the correct driver for this device!"
