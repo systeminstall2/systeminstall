@@ -71,6 +71,8 @@ LV_BRANCH='release-1.3/neovim-0.9' yes | bash <(curl -s https://raw.githubuserco
 
 rm -rf ~/.config/lvim && cp ~/systeminstall/lvim ~/.config/ -r
 
+echo "export PATH=/home/n0ne/.local/bin:$PATH" >> ~/.zshenv && source ~/.zshenv
+
 sudo chmod 755 ~/.config/bspwm/bspwmrc
 sudo chmod 644 ~/.config/sxhkd/sxhkdrc
 
