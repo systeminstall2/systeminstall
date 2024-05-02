@@ -22,8 +22,8 @@ echo 'export PATH=$PATH:/opt/rust/bin' | sudo tee -a /etc/profile.d/rust.sh
 source ~/.cargo/env
 source /etc/profile
 
-yay -Syu --noconfirm --sudoloop etcher-bin cargo ventoy-bin sxhkd protonvpn-gui rustdesk-bin syncthing-gtk visual-studio-code-bin burpsuite oh-my-zsh-plugin-autosuggestions oh-my-zsh-plugin-syntax-highlighting
-sudo pacman -S --noconfirm ripgrep ttf-hack python-pynvim polkit-kde-agent brasero rofi feh polybar tree chromium network-manager-applet cmake firefox-developer-edition wmname gnome-disk-utility gnu-netcat gparted kate keepassxc libreoffice-still btop prusa-slicer maim fastfetch neovim nmap p7zip python-pip ripgrep sxiv syncthing terminator torbrowser-launcher ufw unzip vim virtualbox wget whois xclip zenity zsh
+yay -Syu --noconfirm --sudoloop etcher-bin cargo ventoy-bin protonvpn-gui rustdesk-bin syncthing-gtk visual-studio-code-bin burpsuite oh-my-zsh-plugin-autosuggestions oh-my-zsh-plugin-syntax-highlighting
+sudo pacman -S --noconfirm bspwm sxhkd ripgrep ttf-hack python-pynvim polkit-kde-agent brasero rofi feh polybar tree chromium network-manager-applet cmake firefox-developer-edition wmname gnome-disk-utility gnu-netcat gparted kate keepassxc libreoffice-still btop prusa-slicer maim fastfetch neovim nmap p7zip python-pip ripgrep sxiv syncthing terminator torbrowser-launcher ufw unzip vim virtualbox wget whois xclip zenity zsh
 sudo pacman -Rns --noconfirm firewalld
 
 curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh" | bash
