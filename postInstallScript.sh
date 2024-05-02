@@ -101,4 +101,7 @@ sudo chmod 644 ~/.config/sxhkd/sxhkdrc
 
 sudo cp ~/systeminstall/timetracker.sh /usr/bin/tt
 
+sudo chsh -s /usr/bin/zsh
+sudo chsh -s /usr/bin/zsh n0ne
+
 echo "\n\nInstallation finished\n\n\nDon't forget to install the correct driver for this device!"
