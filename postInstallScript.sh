@@ -21,7 +21,7 @@ source ~/.cargo/env
 source /etc/profile
 
 yay -Syu --noconfirm --sudoloop etcher-bin cargo ventoy-bin sxhkd protonvpn-gui rustdesk-bin syncthing-gtk visual-studio-code-bin burpsuite oh-my-zsh-plugin-autosuggestions oh-my-zsh-plugin-syntax-highlighting
-sudo pacman -S --noconfirm ripgrep pynvim ttf-hack polkit-kde-agent brasero rofi feh polybar tree chromium network-manager-applet cmake firefox-developer-edition wmname gnome-disk-utility gnu-netcat gparted kate keepassxc libreoffice-still btop prusa-slicer maim fastfetch neovim nmap p7zip python-pip ripgrep sxiv syncthing terminator torbrowser-launcher ufw unzip vim virtualbox wget whois xclip zenity zsh
+sudo pacman -S --noconfirm ripgrep pynvim ttf-hack python-pynvim polkit-kde-agent brasero rofi feh polybar tree chromium network-manager-applet cmake firefox-developer-edition wmname gnome-disk-utility gnu-netcat gparted kate keepassxc libreoffice-still btop prusa-slicer maim fastfetch neovim nmap p7zip python-pip ripgrep sxiv syncthing terminator torbrowser-launcher ufw unzip vim virtualbox wget whois xclip zenity zsh
 sudo chsh -s /usr/bin/zsh
 sudo chsh -s /usr/bin/zsh n0ne
 sudo pacman -Rns --noconfirm firewalld
@@ -88,7 +88,7 @@ mkdir -p ~/.config/terminator && cat ~/systeminstall/terminator > ~/.config/term
 
 python3 -m venv venv && source venv/bin/activate
 
-echo "In the following enter yes, no, yes"
+echo "In the following enter yes, no, yes with 'rust provider': cargo"
 
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 
