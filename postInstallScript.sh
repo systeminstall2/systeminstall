@@ -87,7 +87,7 @@ mkdir -p ~/.config/terminator && cat ~/systeminstall/terminator > ~/.config/term
 
 python3 -m venv venv && source venv/bin/activate
 
-LV_BRANCH='release-1.3/neovim-0.9' yes | bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 
 rm -rf ~/.config/lvim && cp ~/systeminstall/lvim ~/.config/ -r
 
