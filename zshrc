@@ -245,6 +245,7 @@ fi
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
+alias neofetch='echo "use fastfetch, its installed!"'
 
 plugins=(zsh-syntax-highlighting, zsh-autosuggestions)
 
