@@ -1,3 +1,8 @@
+printf "Remove the password and reboot or stay at the pc/vm at all times, because password reprompts will happen after a while, that will fuck the system if not accepted\n\n\n"                                                   
+
+for i in {9..0};do echo "Starting Script in $i seconds...READ ABOVE\!" && sleep 1;done
+
+
 # Getting all the files
 
 git clone https://github.com/systeminstall/systeminstall ~/systeminstall 
