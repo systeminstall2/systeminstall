@@ -2,9 +2,6 @@ printf "Remove the password and reboot or stay at the pc/vm at all times, becaus
 
 for i in {9..0};do echo "Starting Script in $i seconds...READ ABOVE\!" && sleep 1;done
 
-sudo chsh -s /usr/bin/zsh
-sudo chsh -s /usr/bin/zsh n0ne
-
 # Getting all the files
 
 git clone https://github.com/systeminstall/systeminstall ~/systeminstall 
