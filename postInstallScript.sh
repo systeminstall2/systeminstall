@@ -87,7 +87,7 @@ python3 -m venv venv && source venv/bin/activate
 
 echo "In the following enter yes, no, yes with 'rust provider': cargo"
 
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh > install.sh && chmod +x install.sh && sudo bash install.sh
 
 rm -rf ~/.config/lvim && cp ~/systeminstall/lvim ~/.config/ -r
 
