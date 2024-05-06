@@ -3,6 +3,10 @@ echo "Defaults passwd_timeout=1000" | sudo tee -a /etc/sudoers.d/custom_sudoers
 
 printf "\n\n\n The Script will install everything now, you don't have to do anything!\n\n\n"
 
+yay -S python-pyauogui --noconfirm --sudoloop
+
+python3 -c 'import pyautogui'
+
 sleep 3
 
 
