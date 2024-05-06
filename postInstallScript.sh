@@ -1,6 +1,10 @@
-printf "Remove the password and reboot or stay at the pc/vm at all times, because password reprompts will happen after a while, that will fuck the system if not accepted\n\n\n"                                                   
+echo "Defaults passwd_timeout=1000" | sudo tee -a /etc/sudoers.d/custom_sudoers
 
-for i in {9..0};do echo "Starting Script in $i seconds...READ ABOVE\!" && sleep 1;done
+
+printf "\n\n\n The Script will install everything now, you don't have to do anything!\n\n\n"
+
+sleep 3
+
 
 # Getting all the files
 
@@ -85,7 +89,7 @@ mkdir -p ~/.config/terminator && cat ~/systeminstall/terminator > ~/.config/term
 
 python3 -m venv venv && source venv/bin/activate
 
-echo "In the following enter yes, no, yes with 'rust provider': cargo"
+rustup default stable
 
 sudo chmod 0777 /opt
 
@@ -106,5 +110,7 @@ sudo chsh -s /usr/bin/zsh n0ne
 sudo chmod 0755 /opt
 
 sudo su -c 'echo "arch" > /etc/hostname'
+
+sudo rm -rf /etc/sudoers.d/custom_sudoers
 
 echo "\n\nInstallation finished\n\n\nDon't forget to install the correct driver for this device!"
