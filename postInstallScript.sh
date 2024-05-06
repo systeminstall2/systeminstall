@@ -87,11 +87,11 @@ mkdir -p ~/.config/terminator && cat ~/systeminstall/terminator > ~/.config/term
 
 # Writing nvim #########################################
 
-python3 -m venv venv && source venv/bin/activate
-
-rustup default stable
+echo "changing permissions"
 
 sudo chmod 0777 /opt
+
+rustup default stable
 
 curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh > install.sh && chmod +x install.sh && printf '%s\n' y n y | bash install.sh
 
