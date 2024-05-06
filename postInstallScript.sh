@@ -87,7 +87,9 @@ python3 -m venv venv && source venv/bin/activate
 
 echo "In the following enter yes, no, yes with 'rust provider': cargo"
 
-curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh > install.sh && chmod +x install.sh && printf '%s\n' y n y | sudo bash install.sh
+sudo chmod 0777 /opt
+
+curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh > install.sh && chmod +x install.sh && printf '%s\n' y n y | bash install.sh
 
 rm -rf ~/.config/lvim && cp ~/systeminstall/lvim ~/.config/ -r
 
@@ -100,5 +102,7 @@ sudo cp ~/systeminstall/timetracker.sh /usr/bin/tt
 
 sudo chsh -s /usr/bin/zsh
 sudo chsh -s /usr/bin/zsh n0ne
+
+sudo chmod 0755 /opt
 
 echo "\n\nInstallation finished\n\n\nDon't forget to install the correct driver for this device!"
