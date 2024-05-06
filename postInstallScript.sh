@@ -105,4 +105,6 @@ sudo chsh -s /usr/bin/zsh n0ne
 
 sudo chmod 0755 /opt
 
+sudo su -c 'echo "arch" > /etc/hostname'
+
 echo "\n\nInstallation finished\n\n\nDon't forget to install the correct driver for this device!"
